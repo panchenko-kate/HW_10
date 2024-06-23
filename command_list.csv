@@ -1,0 +1,41 @@
+    1  git config user.name "Kateryna Panchenko"
+    2  git init
+    3  git config user.name "Kateryna Panchenko"
+    4  git config user.email "kmaslova_007@ukr.net"
+    5  git clone https://github.com/panchenko-kate/HW_10.git
+    6  cd HW_10
+    7  touch text_ignore.txt
+    8  ls
+    9  echo "text_ignore.txt" >> .gitignore
+   10  cat .gitignore
+   11  sed -i 's/TestResults.xmltext_ignore.txt/TestResults.xml/g' .gitignore
+   12  cat .gitignore
+   13  acho
+   14  echo " text_ignore.txt" >> .gitignore
+   15  cat .gitignore
+   16  sed -i 's/ text_ignore.txt/text_ignore.txt/g' .gitignore
+   17  cat .gitignore
+   18  git add .
+   19  git commit - m "Added text_ignore.txt to .gitirnore"
+   20  git commit -m "Added text_ignore.txt to .gitirnore"
+   21  git status
+   22  touch main_text.txt
+   23  git add .
+   24  git commit -m "added main.txt file"
+   25  git checkout -b develop
+   26  echo develop_test.txt
+   27  ls
+   28  touch develop_test.txt
+   29  git add .
+   30  git commit -m "added develop_test.txt file"
+   31  echo "test" >> develop_test.txt
+   32  git statuus
+   33  git status
+   34  git add .
+   35  gsit commit -m "changed develop_test.txt file"
+   36  git commit -m "changed develop_test.txt file"
+   37  git checkout
+   38  git checkout main
+   39  git merge develop
+   40  git log
+   41  history > command_list.csv
